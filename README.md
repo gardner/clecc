@@ -1,4 +1,4 @@
-#clecc
+# clecc
 ---------
 
 Implementation of an elliptic curve cryptographic system assisted by GPGPU computation via CUDA.
@@ -17,15 +17,15 @@ Here, [this page](http://www.dkrypt.com/home/ecc) can explain it far better than
 
 Now because we're dealing with a simple circle in this example, even with a huge exponent it's fairly easy to notice the pattern of repetition if we know the total number of segments. However, elliptic curves over finite fields have an interesting property where this sort of multiplication doesn't result in the same number each time it goes around. In fact, it's not guaranteed that you will _ever_ get the same number again if you continuously multiply by the same value.
 
-##Why?
+## Why?
 
 The only real reason to do anything, I suppose: to learn. I'd always been curious about how AES works under the hood and while any discrete math course will generally cover the RSA cryptosystem in depth, everybody knows AES is the cool kid (in so much as cryptosystems can be cool kids).
 
-##How?
+## How?
 
 So here's the deal. I've done OpenGL in the past for small projects and little test applications. I've used CUDA before for a couple fluid physics simulations and some really simple numerical analysis. So naturally my intention is to mash together these two libraries until the twisted wreckage produces some eye-pleasing visualizations of the cryptosystem's internal processes. 
 
-##Sources
+## Sources
 
 [DKrypt](http://www.dkrypt.com/home/ecc) : Excellent source on a bunch of cryptography-related mathematics.
 
